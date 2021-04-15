@@ -9,6 +9,7 @@ forbidden
 received
 received
 Timedout
+internal
 forward
 address
 process
@@ -21,6 +22,7 @@ signal
 cannot
 handle
 source
+server
 TRACE
 getOI
 event
@@ -32,6 +34,8 @@ while
 ERROR
 ERROR
 ERROR
+ERROR
+error
 INFO
 from
 WARN
@@ -39,6 +43,7 @@ the
 401
 503
 403
+500
 on
 T1
 to
