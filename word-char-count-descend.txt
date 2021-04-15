@@ -5,7 +5,6 @@ unavailable
 connection
 connecting
 interface
-forbidden
 received
 received
 Timedout
@@ -31,12 +30,10 @@ route
 while
 ERROR
 ERROR
-ERROR
 INFO
 from
 WARN
 the
-403
 401
 503
 on
