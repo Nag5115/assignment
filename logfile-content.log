@@ -6,3 +6,4 @@ WARN connection Timedout while connecting to source
 ERROR 401 unauthorized
 ERROR 503 service unavailable
 ERROR 403 forbidden
+ERROR 500 internal server error
