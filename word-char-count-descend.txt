@@ -1,6 +1,7 @@
 unauthorized
 9.67.116.98
 9.67.116.98
+unavailable
 connection
 connecting
 interface
@@ -13,6 +14,7 @@ address
 process
 SIGALRM
 started
+service
 router
 source
 signal
@@ -29,12 +31,14 @@ route
 while
 ERROR
 ERROR
+ERROR
 INFO
 from
 WARN
 the
 403
 401
+503
 on
 T1
 to
