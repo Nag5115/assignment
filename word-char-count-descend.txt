@@ -16,6 +16,8 @@ process
 SIGALRM
 started
 service
+Gateway
+Timeout
 router
 source
 signal
@@ -36,6 +38,7 @@ ERROR
 ERROR
 ERROR
 error
+ERROR
 INFO
 from
 WARN
@@ -44,6 +47,7 @@ the
 503
 403
 500
+504
 on
 T1
 to
