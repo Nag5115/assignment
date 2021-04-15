@@ -18,13 +18,13 @@ pipeline{
         }
         stage("Storing the Output back to repo"){
             steps{
-                script {
+                script{
                     catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE'){
-                        withCredentials([usernamePassword(credentialsId: 'user_id')]){
-                            sh "git rm --cached word-char-count-descend.txt"
-							sh "git add word-char-count-descend.txt"
-                            sh "git commit -m 'Updating Output back to repo'"
-                            sh "git push"
+                        withCredentials([usernamePassword(credentialsId: 'user_id', passwordVariable: 'G_PASSWRD', usernameVariable: 'G_USERNAME')]){
+                            def encodedPassword = URLEncoder.encode("$G_PASSWRD",'UTF-8')
+                            sh "git add word-char-count-descend.txt"
+                            sh "git commit -m 'Pushing to git'"
+                            sh "git push https://${G_USERNAME}:${encodedPassword}@github.com/${G_USERNAME}/assignment.git"
                         }
                     }
                 }
@@ -32,3 +32,4 @@ pipeline{
         }
     }
 }
+   
