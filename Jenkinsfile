@@ -22,8 +22,6 @@ pipeline{
                     catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE'){
                         withCredentials([usernamePassword(credentialsId: 'user_id', passwordVariable: 'G_PASSWRD', usernameVariable: 'G_USERNAME')]){
                             def encodedPassword = URLEncoder.encode("$G_PASSWRD",'UTF-8')
-							sh "git config user.email nag5115@gmail.com"
-                            sh "git config user.name Nag5115"
                             sh "git add word-char-count-descend.txt"
                             sh "git commit -m 'Pushing to git'"
                             sh "git push https://${G_USERNAME}:${encodedPassword}@github.com/${G_USERNAME}/assignment.git"
