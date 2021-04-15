@@ -1,0 +1,4 @@
+TRACE router forward getOI source address 9.67.116.98
+INFO received event from RAWIP on interface 9.67.116.98
+DEBUG process received signal SIGALRM
+ERROR route cannot handle the started T1
