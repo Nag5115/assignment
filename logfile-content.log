@@ -3,3 +3,4 @@ INFO received event from RAWIP on interface 9.67.116.98
 DEBUG process received signal SIGALRM
 ERROR route cannot handle the started T1
 WARN connection Timedout while connecting to source
+ERROR 403 forbidden
