@@ -24,7 +24,7 @@ pipeline{
                             def encodedPassword = URLEncoder.encode("$G_PASSWRD",'UTF-8')
                             sh "git status ."
                             sh "git add word-char-count-descend.txt"
-                            sh "git commit -m 'Pushing to git'"
+                            sh "git commit -m 'Pushing the latest output file to git'"
                             sh "git push https://${G_USERNAME}:${encodedPassword}@github.com/${G_USERNAME}/assignment.git"
                         }
                     }
